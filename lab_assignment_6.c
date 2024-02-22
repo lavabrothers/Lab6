@@ -26,7 +26,7 @@ int main(void)
 	int value;
 	int index;
 	int* numArray = NULL;
-	int countOfNums;:
+	int countOfNums;
 	FILE* inFile = fopen("input.txt","r");
 
 	fscanf(inFile, " %d\n", &numInputs);
