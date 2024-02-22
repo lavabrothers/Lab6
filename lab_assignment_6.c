@@ -3,22 +3,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+//recursive function
+//thisnis the searcher
 int search(int numbers[], int low, int high, int value) 
 {
+	//make sure we have valid bounds
 	if (low > high){
 		return -1;
 	}
-	
+	//calculate the mid
 	int mid = low +(high-low)/2;
 	
+	//if we find the mid immediatly, skip search
 	if(numbers[mid] == value){
 		return mid;
 
 	}
+	//Look towards the bottom if value is greater than
 	else if (numbers[mid] > value){
 		return search(numbers, low, mid -1, value);
 	}
+	//looks towards top if value is lower than
 	else {
 		return search(numbers, mid +1, high, value);
 	}
