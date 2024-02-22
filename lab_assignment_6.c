@@ -1,3 +1,5 @@
+//Programmer Evan Rees
+
 #include <stdio.h>
 
 int search(int numbers[], int low, int high, int value) 
@@ -24,7 +26,7 @@ int main(void)
 	int value;
 	int index;
 	int* numArray = NULL;
-	int countOfNums;
+	int countOfNums;:
 	FILE* inFile = fopen("input.txt","r");
 
 	fscanf(inFile, " %d\n", &numInputs);
