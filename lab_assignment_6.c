@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 //recursive function
-//thisnis the searcher
+//this is the searcher
 int search(int numbers[], int low, int high, int value) 
 {
 	//make sure we have valid bounds
